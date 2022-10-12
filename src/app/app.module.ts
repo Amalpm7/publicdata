@@ -5,8 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DataComponent } from './data/data.component';
-import { HttpClientModule } from "@angular/common/http";
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from "@angular/common/http";
 
 const addRoute:Routes=[
   {
@@ -22,8 +22,9 @@ const addRoute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    RouterModule.forRoot(addRoute)
+    RouterModule.forRoot(addRoute),
+    HttpClientModule
+
 
   ],
   providers: [],
